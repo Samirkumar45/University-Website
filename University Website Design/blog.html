@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, inital-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="sub-header">
+            <nav>
+                <a href="Index.html"><img src="Image/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="Index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="course.html">COURSE</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Our Certificate & Online Programs For 2021</h1>
+        </section>
+
+        <!------Blog page content-------->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+
+                    <img src="Image/certificate.jpg" >
+                    <h2>Our Certificate & Online Programs For 2021</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentasque aliquet turpis nulla, eleifend faucibus est 
+                        sollicitudin ut. Meacenas ut venenatis ex, et dapibus
+                        purus. Donec sit amet nisl non justo malesuada fermentum.
+                        Donec eget felis dolor. Suspendisse condimentum vestibulum
+                        ex ac cursus.
+                    </p>
+                        <br>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentasque aliquet turpis nulla, eleifend faucibus est 
+                        sollicitudin ut. Meacenas ut venenatis ex, et dapibus
+                        purus. Donec sit amet nisl non justo malesuada fermentum.
+                        Donec eget felis dolor. Suspendisse condimentum vestibulum
+                        ex ac cursus.Aliquam accusantium dolores aperiam minima delectus culpa quos,
+                        neque voluptatum nihil ipsum ut eius quae beatae repudiandae deserunt deleniti explicabo in laborum!
+                        Lorem ipsum dolor sit amet , consectetur adipiscing elit.
+                    Pellentasque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.
+                    Meacenas ut venenatis ex, et dapibus purus.
+                        </p>
+                        <br>
+                        <p>
+                            The original Latin word universitas refers in general to "a number of persons associated into one body, a society, company, community, guild, corporation, etc".[12] At the time of the emergence of urban town life and medieval guilds, specialized "associations of students and teachers with collective legal rights usually guaranteed by charters issued by princes, prelates, or the towns in which they were located" came to be denominated by this general term. Like other guilds, they were self-regulating and determined the qualifications of their members.[13]
+                            In modern usage the word has come to mean "An institution of higher education offering tuition in mainly non-vocational subjects and typically having the power to confer degrees,
+                            "[14] with the earlier emphasis on its corporate organization considered as applying historically to Medieval universities.[15]
+                            The original Latin word referred to degree-awarding institutions of learning in Western and Central Europe,
+                            where this form of legal organisation was prevalent and from where the institution spread around the world.
+                        </p>
+                        <div class="comment-box">
+                            <h3>Leave a comment</h3>
+
+                            <form class="comment-form">
+                                <input type="text" placeholder="Enter Name">
+                                <input type="email" placeholder="Enter Email">
+                                <textarea rows="5" placeholder="Your Comment">
+                                </textarea>
+                                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                            </form>
+                        </div> 
+                    
+                </div>
+                <div class="blog-right">
+
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+<!------Footer----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentasque aliquet turpis nulla, eleifend faucibus est <br>
+        sollicitudin ut. Meacenas ut venenatis ex, et dapibus purus.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin"></i>
+        
+    </div>
+    <p>Made With <i class="fa fa-heart-o"></i> by Samir Jana</p>
+</section>
+<!-----JavaScript for  Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
